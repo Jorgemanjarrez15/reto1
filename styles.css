@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+header .logo{
+  margin-left: 10px;
+}
+header .menu-ham{
+  margin-right: 10px;
+
+}
+header .menu{
+  display: none;
+}
+.inactive{
+  display: none;
+}
+/*menu mobile*/
+aside{
+  margin-top: 320px;
+  margin-left: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+}
+aside .menu-mobile{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+aside .menu-mobile ul{
+  list-style: none;
+}
+aside .menu-mobile ul li{
+  margin-top: 40px;
+}
+aside .menu-mobile ul li a:hover{
+  border-bottom: 1px solid black;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+aside .menu-mobile .close-menu{
+  margin-top: 20px;
+}
+
+/*main*/
+main{
+  width: 100%;
+  height: auto;
+  font-family: sans-serif;
+}
+main .principal{
+  width: 100%;
+}
+main .principal .container-img{
+  width: 300px;
+  margin: 10px auto;
+}
+main .principal .container-img .mobile{
+  width: 100%;
+}
+main .principal .container-img .desktop{
+  display: none;
+}
+main .principal .contenido{
+  width: 300px;
+  margin: 10px auto;
+}
+main .principal .contenido h1,p,button{
+  margin-top: 10px;
+}
+main .principal .contenido button{
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #f16565;
+  border: none;
+  border-radius: 2px;
+}
+main .secondary{
+  width: 300px;
+  height: 490px;
+  margin: 40px auto;
+  background-color: rgb(6, 6, 48);
+  padding: 20px;
+}
+main .secondary h3{
+  color: goldenrod;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+main .secondary h4{
+  margin-top: 40px;
+  color: white;
+}
+main .secondary p{
+  margin-bottom: 30px;
+  color: white;
+}
+
+/*footer*/
+footer{
+  width: 100%;
+  height: 600px;
+  display: block;
+  font-family: sans-serif;
+}
+footer .articulos{
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+}
+footer .articulos .num-art{
+  width: 200px;
+  height: 200px;
+}
+footer .articulos .num{
+  font-size: 30px;
+  color: gray;
+  margin-left: 10px;
+}
+footer .articulos h4{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+footer .articulos .enunciado{
+  margin-left: 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+@media(min-width:640px){
+  .menu-ham{
+    display: none;
+  }
+  header .menu{
+    display: block;
+
+  }
+  header .menu ul{
+    display: flex;
+    list-style: none;
+  }
+  header .menu ul li{
+    margin-right: 15px;
+  }
+  header .menu ul li a:hover{
+    border-bottom: 1px solid black;
+  }
+  aside{
+   position: absolute;
+  }
+  /*main*/
+  main{
+    display: flex;
+  }
+  main .principal{
+    margin-top: 30px;
+    width: 60%;
+    height: 500px;
+  }
+  main .principal .contenido{
+    margin-top: 30px;
+  }
+
+  main .secondary{
+    width: 35%;
+    height: 580px;
+    margin-right: 40px;
+    padding: 10;
+  }
+  /*footer*/
+  footer{
+    height: 300px;
+    display: flex;
+  }
+  footer .articulos{
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  footer .articulos img{
+    width: 90px;
+    height: 100px;
+  }
+  footer .articulos .num-art{
+    width: 150px;
+    height: 200px;
+  }
+  footer .articulos .num{
+    font-size: 20px;
+    color: gray;
+    margin-left: 0;
+  }
+  footer .articulos h4{
+    margin-top: 5px;
+    margin-left: 0;
+  }
+  footer .articulos .enunciado{
+    color: gray;
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+@media(min-width:1024px){
+  header{
+    width: 80%;  
+    margin: 0 auto;
+  }
+  main{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+  }
+  main .principal{
+    width: 70%;
+  }
+  main .principal .container-img{
+    width: 100%;
+    height: 250px;
+  }
+  main .principal .container-img .mobile{
+    display: none;
+  }
+  main .principal .container-img .desktop{
+    display: block;
+    width: 100%;
+  }
+  main .principal .contenido{
+    margin-left: 0;
+    display: flex;
+    width: 100%;
+  }
+  main .contenido h1{
+    font-size: 45px;
+    width: 50%;
+  }
+  main .contenido div{
+    width: 50%;
+  }
+  main .contenido div button{
+    margin-top: 20px;
+  }
+  main .secondary{
+    height: 450px;
+    width: 40%;
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  /*footer*/
+  footer{
+    width: 80%;
+    margin: 50px auto;
+  }
+  footer .articulos{
+    display: flex;
+    margin-left: 0;
+    width: 350px;
+    align-items: center;
+
+  }
+  footer .articulos img{
+    width: 120px;
+    height: 150px;
+  }
+  footer .articulos .num-art{
+    width: 250px;
+    height: 150px;
+  }
+  footer .articulos .num{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  footer .articulos h4{
+    margin-left: 10px;
+  }
+  footer .articulos .num-art p{
+    margin-left: 10px;
+  }
+}

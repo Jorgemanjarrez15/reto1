@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    aside{
+      width: 300px;
+      height: 400px;
+      background-color: white;
+    }
+    aside .menu-mobile{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    aside .menu-mobile ul{
+      list-style: none;
+    }
+    aside .menu-mobile ul li{
+      margin-top: 40px;
+    }
+    aside .menu-mobile ul li a:hover{
+      border-bottom: 1px solid black;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    aside .menu-mobile .close-menu{
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+<aside>
+  <nav class="menu-mobile">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Categories</a></li>
+    </ul>
+    <div class="close-menu">
+      <img src="../assets/images/icon-menu-close.svg" alt="">
+    </div>
+  </nav>
+
+</aside>
+</body>
+</html>
